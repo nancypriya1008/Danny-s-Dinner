@@ -1,5 +1,7 @@
-**1. What is the total amount each customer spent at the restaurant?**
- '#Select' sales.customer_id,sum(menu.price) as total_amount
- '#from' sales '#left join' menu on sales.product_id = menu.product_id
- '#group by' sales.customer_id
- '#order by' sales.customer_id Asc;
+ --1. What is the total amount each customer spent at the restaurant?
+'''sql
+ Select sales.customer_id,sum(menu.price) as total_amount
+ from sales left join menu on sales.product_id = menu.product_id
+ group by sales.customer_id
+ order by sales.customer_id Asc;
+'''
