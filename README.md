@@ -1,5 +1,5 @@
 This repository contains all of my code submissions for the #SQLChallenge!
-For my code submissions I used Mysql database.
+- For my code submissions I used Mysql database.
 
 # 🍜 Case Study #1 - Danny's Diner
 
