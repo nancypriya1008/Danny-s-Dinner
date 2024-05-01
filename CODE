@@ -1,5 +1,5 @@
  --1. What is the total amount each customer spent at the restaurant?
-'''
+'''mysql
  Select sales.customer_id,sum(menu.price) as total_amount
  from sales left join menu on sales.product_id = menu.product_id
  group by sales.customer_id
