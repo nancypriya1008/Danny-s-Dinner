@@ -19,6 +19,13 @@ Danny has shared with you 3 key datasets for this case study:
 - menu
 - members
 
+### 1. What is the total amount each customer spent at the restaurant?
+'''mysql
+ Select sales.customer_id,sum(menu.price) as total_amount
+ from sales left join menu on sales.product_id = menu.product_id
+ group by sales.customer_id
+ order by sales.customer_id Asc;
+'''
 
 
 
